@@ -4,7 +4,6 @@
 author：Jiawei Huang
 date：2018-11-23
 '''
-
 import os
 import re
 import sys
@@ -87,3 +86,7 @@ def manyPdfToTxt (fileDir):
         outPath = tarDir+'\\'+re.sub(replace, '', file)+'.txt'
         onePdfToTxt(filePath, outPath)
         print("saved in "+outPath)
+        
+if __name__=="__main__":
+    onePdfToTxt("aaa.pdf", "out.txt")
+    
